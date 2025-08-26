@@ -1,0 +1,55 @@
+---------------------------------
+Inputs:     (10000, Deborah, 18055558790)
+Expecting:  
+====================================
+Sender name: Deborah
+Sender number: 18055558790
+Sender rateLimit: 10000
+====================================
+
+Actual:     
+====================================
+Sender name: Deborah
+Sender number: 18055558790
+Sender rateLimit: 10000
+====================================
+
+Pass
+---------------------------------
+Inputs:     (5000, Jason, 18055558791)
+Expecting:  
+====================================
+Sender name: Jason
+Sender number: 18055558791
+Sender rateLimit: 5000
+====================================
+
+Actual:     
+====================================
+Sender name: Jason
+Sender number: 18055558791
+Sender rateLimit: 5000
+====================================
+
+Pass
+---------------------------------
+Inputs:     (1000, Jill, 18055558792)
+Expecting:  
+====================================
+Sender name: Jill
+Sender number: 18055558792
+Sender rateLimit: 1000
+====================================
+
+Actual:     
+====================================
+Sender name: Jill
+Sender number: 18055558792
+Sender rateLimit: 1000
+====================================
+
+Pass
+---------------------------------
+3 passed, 0 failed
+PASS
+ok  	l5_embedded_structs	0.198s
