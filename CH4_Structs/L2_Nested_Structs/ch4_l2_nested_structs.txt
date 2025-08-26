@@ -1,0 +1,54 @@
+---------------------------------
+Inputs:
+  * message:          you have an appointment tomorrow
+  * sender.name:      Brenda Halafax
+  * sender.number:    16545550987
+  * recipient.name:   Sally Sue
+  * recipient.number: 19035558973
+  Expected:           true
+  Actual:             true
+Pass
+Error: sender 'Name' field is invalid or empty.---------------------------------
+Inputs:
+  * message:          you have an event tomorrow
+  * sender.name:      
+  * sender.number:    16545550987
+  * recipient.name:   Suzie Sall
+  * recipient.number: 19035558973
+  Expected:           false
+  Actual:             false
+Pass
+Error: recipient 'Number' field is invalid or zero.---------------------------------
+Inputs:
+  * message:          you have an birthday tomorrow
+  * sender.name:      Jason Bjorn
+  * sender.number:    16545550987
+  * recipient.name:   Jim Bond
+  * recipient.number: 0
+  Expected:           false
+  Actual:             false
+Pass
+Error: sender 'Number' field is invalid or zero.---------------------------------
+Inputs:
+  * message:          you have a party tomorrow
+  * sender.name:      Njorn Halafax
+  * sender.number:    0
+  * recipient.name:   Becky Sue
+  * recipient.number: 19035558973
+  Expected:           false
+  Actual:             false
+Pass
+Error: recipient 'Name' field is invalid or empty.---------------------------------
+Inputs:
+  * message:          you have a birthday tomorrow
+  * sender.name:      Eli Halafax
+  * sender.number:    16545550987
+  * recipient.name:   
+  * recipient.number: 19035558973
+  Expected:           false
+  Actual:             false
+Pass
+---------------------------------
+5 passed, 0 failed
+PASS
+ok  	l2_nested_structs	0.202s
